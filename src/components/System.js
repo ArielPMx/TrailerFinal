@@ -43,54 +43,57 @@ const System = () => {
   };
 
   return (
-    <div className="form">
-            <Header/>
-      <h1>Crud Peliculas</h1>
-      <form className="input-wrapper">
-        <label htmlFor="name">Título:</label>
-        <input
-          id="name"
-          type="text"
-          ref={nameRef}
-          onChange={({ target }) => setName(target.value)}
-          required
-        />
-        <label htmlFor="age">Año:</label>
-        <input
-          id="age"
-          type="number"
-          ref={ageRef}
-          onChange={({ target }) => setAge(target.value)}
-          required
-        />
-        <label htmlFor="race">Director:</label>
-        <input
-          id="race"
-          type="text"
-          ref={raceRef}
-          onChange={({ target }) => setRace(target.value)}
-          required
-        />
-        <label htmlFor="job">Reseña:</label>
-        <input
-          id="job"
-          type="text"
-          ref={jobRef}
-          onChange={({ target }) => setJob(target.value)}
-          required
-        />
-        <label htmlFor="weapon">ID del video:</label>
-        <input
-          id="weapon"
-          type="text"
-          ref={weaponRef}
-          onChange={({ target }) => setWeapon(target.value)}
-          required
-        />
-      </form>
-      <button className="btn" onClick={addChar}>
-        Agregar
-      </button>
+    <div>
+      <Header/>
+      <div className="form">
+
+        <h1>Crud Peliculas</h1>
+        <form className="input-wrapper">
+          <label htmlFor="name">Título:</label>
+          <input
+            id="name"
+            type="text"
+            ref={nameRef}
+            onChange={({ target }) => setName(target.value)}
+            required
+          />
+          <label htmlFor="age">Año:</label>
+          <input
+            id="age"
+            type="number"
+            ref={ageRef}
+            onChange={({ target }) => setAge(target.value)}
+            required
+          />
+          <label htmlFor="race">Director:</label>
+          <input
+            id="race"
+            type="text"
+            ref={raceRef}
+            onChange={({ target }) => setRace(target.value)}
+            required
+          />
+          <label htmlFor="job">Reseña:</label>
+          <input
+            id="job"
+            type="text"
+            ref={jobRef}
+            onChange={({ target }) => setJob(target.value)}
+            required
+          />
+          <label htmlFor="weapon">ID del video:</label>
+          <input
+            id="weapon"
+            type="text"
+            ref={weaponRef}
+            onChange={({ target }) => setWeapon(target.value)}
+            required
+          />
+        </form>
+        <button className="btn" onClick={addChar}>
+          Agregar
+        </button>
+      </div>
     </div>
   );
 };

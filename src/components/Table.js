@@ -78,7 +78,7 @@ const Table = () => {
           Director: <span>{char.race}</span>
           </h4>
           <h4>
-          Reseña: <span>{char.job}</span>
+          Resumen: <span>{char.job}</span>
           </h4>
           <h4>
           IdURL: <span>{char.weapon}</span>
